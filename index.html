@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101f35">
+  <meta name="description" content="شركة جبر لمعدات البترول المحدودة - توريد مستلزمات خطوط البترول والغاز وتوصيلات المصانع.">
+  <meta property="og:title" content="JABR PETROLEUM EQUIPMENT LTD.">
+  <meta property="og:description" content="الثقة والجودة في كل منتج يحمل اسمنا | International Standards • Competitive Prices">
+  <meta property="og:type" content="website">
+  <title>شركة جبر لمعدات البترول المحدودة | JABR PETROLEUM</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="Jabr Petroleum home"><span class="brand-mark">J</span><span><b data-company>شركة جبر لمعدات البترول</b><small>JABR PETROLEUM EQUIPMENT LTD.</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home" data-i18n="navHome">الرئيسية</a><a href="#catalog" data-i18n="navCatalog">الكتالوج</a><a href="#why" data-i18n="navWhy">لماذا جبر؟</a><a href="#contact" data-i18n="navContact">تواصل معنا</a>
+    </nav>
+    <div class="nav-actions"><button class="lang-btn" id="langToggle">EN</button><button class="cart-open" id="cartOpen">طلباتي <span id="cartCount">0</span></button></div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div><div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i><span data-i18n="eyebrow">حلول متكاملة للصناعة والطاقة</span></span>
+      <h1 data-company>شركة جبر لمعدات البترول المحدودة</h1>
+      <p class="hero-en">JABR PETROLEUM EQUIPMENT LTD.</p>
+      <p class="hero-desc" data-i18n="heroDesc">متخصصون في توريد وتوفير جميع مستلزمات خطوط البترول والغاز وتوصيلات المصانع.</p>
+      <p class="hero-slogan" data-slogan>الثقة والجودة في كل منتج يحمل اسمنا</p>
+      <div class="hero-buttons"><a class="btn btn-gold" href="#catalog" data-i18n="browse">تصفح الكتالوج <span>←</span></a><button class="btn btn-outline" id="heroWhatsApp" data-i18n="whatsQuote">اطلب عرض سعر عبر واتساب</button></div>
+      <div class="hero-proof"><span>✓ <span data-i18n="standards">مواصفات عالمية</span></span><span>✓ <span data-i18n="prices">أسعار تنافسية</span></span></div>
+    </div>
+    <div class="hero-visual"><div class="visual-frame"><img src="assets/images/hero-industrial.svg" alt="Industrial pipeline illustration"><div class="visual-caption"><strong>OIL & GAS</strong><span>INDUSTRIAL SUPPLIES</span></div></div><div class="floating-tag"><b>01—08</b><span data-i18n="categoriesCount">أقسام متخصصة</span></div></div>
+  </div>
+  <div class="hero-bottom-line"></div>
+</section>
+
+<section class="highlights"><div class="container highlight-grid">
+  <div class="highlight"><span class="highlight-icon">✦</span><div><b data-i18n="standards">مواصفات عالمية</b><small>International Standards</small></div></div>
+  <div class="highlight"><span class="highlight-icon">◇</span><div><b data-i18n="prices">أسعار تنافسية</b><small>Competitive Prices</small></div></div>
+  <div class="highlight"><span class="highlight-icon">✓</span><div><b data-i18n="quality">جودة مضمونة</b><small>Quality Focus</small></div></div>
+  <div class="highlight"><span class="highlight-icon">▦</span><div><b data-i18n="variety">تنوع كبير</b><small>Wide Product Range</small></div></div>
+</div></section>
+
+<section class="section catalog-section" id="catalog">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow dark"><i></i><span data-i18n="catalogEyebrow">كتالوج المنتجات</span></span><h2 data-i18n="catalogTitle">المستلزمات الصناعية</h2><p data-i18n="catalogDesc">استكشف مجموعتنا من منتجات خطوط البترول والغاز والمصانع.</p></div><div class="catalog-count"><b id="resultCount">0</b><span data-i18n="productCount">منتج معروض</span></div></div>
+    <div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث باسم المنتج أو المواصفة..." data-placeholder="searchPlaceholder"><kbd>⌘ K</kbd></label><button class="filter-reset" id="resetFilters" data-i18n="reset">إعادة ضبط</button></div>
+    <div class="category-tabs" id="categoryTabs"></div>
+    <div class="product-grid" id="productGrid"></div>
+    <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3 data-i18n="noResults">لا توجد نتائج مطابقة</h3><p data-i18n="tryAgain">جرّب كلمة بحث أخرى أو اختر قسمًا مختلفًا.</p></div>
+  </div>
+</section>
+
+<section class="pipe-tool-section">
+  <div class="container pipe-tool">
+    <div class="pipe-copy"><span class="eyebrow"><i></i><span data-i18n="specEyebrow">أداة اختيار المواصفات</span></span><h2 data-i18n="pipeTitle">حدد مواصفات المواسير المطلوبة</h2><p data-i18n="pipeDesc">اختر المقاس والجدول ودرجة الصلب والطول، وأضف المواصفات مباشرة إلى طلب عرض السعر.</p><div class="pipe-note">ⓘ <span data-i18n="pipeNote">التوافر والتسعير النهائي حسب تأكيد الشركة ومتطلبات المشروع.</span></div></div>
+    <form class="pipe-form" id="pipeForm">
+      <label><span data-i18n="size">المقاس</span><select id="pipeSize"></select></label>
+      <label><span data-i18n="schedule">السماكة / الجدول</span><select id="pipeSchedule"></select></label>
+      <label><span data-i18n="grade">درجة الصلب</span><select id="pipeGrade"></select></label>
+      <label><span data-i18n="length">الطول</span><select id="pipeLength"></select></label>
+      <label><span data-i18n="material">الخامة</span><select id="pipeMaterial"></select></label>
+      <label><span data-i18n="quantity">الكمية</span><input id="pipeQty" type="number" min="1" value="1"></label>
+      <button class="btn btn-gold full" type="submit" data-i18n="addPipe">أضف المواصفات إلى الطلب</button>
+    </form>
+  </div>
+</section>
+
+<section class="section why-section" id="why"><div class="container why-grid">
+  <div class="why-art"><div class="why-art-inner"><span>J</span><small>JABR PETROLEUM<br>ENGINEERING SUPPLIES</small></div><div class="why-stamp">TRUST<br>& QUALITY</div></div>
+  <div class="why-copy"><span class="eyebrow dark"><i></i><span data-i18n="whyEyebrow">شريكك في التوريد الصناعي</span></span><h2 data-i18n="whyTitle">لماذا شركة جبر؟</h2><p data-i18n="whyIntro">نعمل على توفير احتياجات خطوط البترول والغاز والمصانع بخيارات متنوعة واهتمام بالمواصفات الفنية.</p>
+    <ul class="benefit-list"><li><b>01</b><span data-i18n="benefit1">تنوع في مستلزمات خطوط البترول والغاز والمصانع.</span></li><li><b>02</b><span data-i18n="benefit2">خيارات متعددة من المواسير والفلنشات والصمامات والوصلات.</span></li><li><b>03</b><span data-i18n="benefit3">إمكانية تحديد الخامة والمقاس والمواصفة المطلوبة.</span></li><li><b>04</b><span data-i18n="benefit4">أسعار تنافسية واهتمام بالجودة.</span></li></ul>
+  </div>
+</div></section>
+
+<section class="contact-section" id="contact"><div class="container contact-grid">
+  <div class="contact-copy"><span class="eyebrow"><i></i><span data-i18n="contactEyebrow">نحن هنا لمساعدتك</span></span><h2 data-i18n="contactTitle">تواصل مع فريق جبر</h2><p data-i18n="contactDesc">أرسل استفسارك أو مواصفات احتياجك، وسيتاح لك التواصل مباشرة مع الشركة.</p>
+    <div class="contact-detail"><span>⌖</span><div><small data-i18n="addressLabel">العنوان</small><b data-address>السجانة – شرق شارع النص – مقابل بنك الجزيرة الأردني</b></div></div>
+    <div class="contact-detail"><span>☎</span><div><small data-i18n="phoneLabel">الهاتف</small><b dir="ltr">+249 912545828</b><b dir="ltr">+249 121992250</b></div></div>
+    <div class="contact-buttons"><a class="btn btn-gold" href="tel:+249912545828" data-i18n="callNow">اتصل الآن</a><a class="btn btn-whatsapp" href="https://wa.me/249912545828" target="_blank" rel="noopener">WhatsApp ↗</a></div>
+    <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Al+Sajana+Khartoum+Sudan" target="_blank" rel="noopener" data-i18n="mapLink">افتح الموقع على خرائط Google ↗</a>
+  </div>
+  <form class="quick-form" id="quickForm"><h3 data-i18n="quickTitle">طلب استفسار سريع</h3><p data-i18n="quickDesc">املأ البيانات التالية وسنجهز رسالة واتساب بطلبك.</p>
+    <div class="form-row"><label><span data-i18n="yourName">الاسم</span><input name="name" required placeholder="الاسم بالكامل"></label><label><span data-i18n="yourCompany">اسم الشركة</span><input name="company" placeholder="اسم الشركة (اختياري)"></label></div>
+    <div class="form-row"><label><span data-i18n="yourPhone">رقم الهاتف</span><input name="phone" required type="tel" placeholder="+249..."></label><label><span data-i18n="productType">نوع المنتج</span><input name="product" placeholder="المواسير، الصمامات..."></label></div>
+    <label><span data-i18n="details">تفاصيل الطلب</span><textarea name="details" rows="4" placeholder="اكتب المقاس والكمية والمواصفات المطلوبة..."></textarea></label>
+    <button class="btn btn-gold full" type="submit" data-i18n="sendWhats">إرسال عبر واتساب</button><small class="privacy-note" data-i18n="formNote">سيتم فتح واتساب لإرسال رسالتك، ولا تُخزن بيانات النموذج على الموقع.</small>
+  </form>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><span class="brand-mark">J</span><div><b>JABR PETROLEUM EQUIPMENT LTD.</b><p data-i18n="footerSlogan">الثقة والجودة في كل منتج يحمل اسمنا</p></div></div><div class="footer-links"><a href="#home" data-i18n="navHome">الرئيسية</a><a href="#catalog" data-i18n="navCatalog">الكتالوج</a><a href="#why" data-i18n="navWhy">لماذا جبر؟</a><a href="#contact" data-i18n="navContact">تواصل معنا</a></div><button class="share-btn" id="shareSite" data-i18n="shareSite">مشاركة الموقع ↗</button></div><div class="container footer-bottom"><span>© <span id="year"></span> JABR PETROLEUM EQUIPMENT LTD. All Rights Reserved.</span><span class="credit">Designed with care • <b>حريف بوسترات خرافية 😎🔥</b></span></div></footer>
+
+<button class="floating-wa" id="floatingWhatsApp" aria-label="WhatsApp">◔</button>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Quotation cart"><div class="drawer-head"><div><span class="eyebrow dark">JABR PETROLEUM</span><h3 data-i18n="cartTitle">طلب عرض السعر</h3></div><button class="icon-btn" id="cartClose" aria-label="Close">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="cart-summary"><span data-i18n="cartItemsLabel">عدد البنود</span><b id="cartTotal">0</b></div><button class="btn btn-gold full" id="sendCart" data-i18n="sendCart">إرسال الطلب عبر واتساب</button><button class="clear-cart" id="clearCart" data-i18n="clearCart">مسح السلة</button></div></aside>
+<div class="modal" id="productModal" aria-hidden="true"><div class="modal-card"><button class="icon-btn modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
